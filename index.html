@@ -26,16 +26,59 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <header class="header-container">
+      <img src="./images/logo.svg" alt="logo de ping" />
+    </header>
+    <h1>We are launching <span>soon!</span></h1>
+    <p>Subscribe and get notified</p>
 
+    <form action="#" class="form-container">
+      <div class="input-email-container">
+        <input
+          class="input-email"
+          type="text"
+          name="email"
+          id="input-email"
+          placeholder="Your email address..."
+        />
+        <p class="error-msg" id="error-msg">
+          Please provide a valid email address
+        </p>
+      </div>
+      <input
+        id="btn-submit"
+        type="submit"
+        value="Notify Me"
+        class="btn-submit"
+      />
+    </form>
+
+    <div class="image-container">
+      <img src="./images/illustration-dashboard.png" alt="dashboard image" />
+    </div>
+    <div class="social-media-container">
+      <a href="https://facebook.com" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    </div>
     <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Diego Cuevas</a>.
-      </p>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
     </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>

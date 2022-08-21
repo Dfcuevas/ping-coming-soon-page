@@ -26,4 +26,124 @@ html {
 
 body {
   font-family: "Libre Franklin", sans-serif;
+  height: 100vh;
+  max-width: 375px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-container img {
+  max-width: 60px;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+span {
+  color: black;
+  font-weight: 700;
+}
+
+p {
+  text-align: center;
+  font-size: 0.55rem;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  max-width: 75%;
+  margin: 0 auto 55px;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--paleBlue);
+  padding: 7px 15px;
+}
+
+.input-email {
+  font-size: 0.5rem;
+  outline: 1px solid var(--paleBlue);
+}
+
+.btn-submit {
+  background-color: var(--blue);
+  color: white;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  background-color: hsl(223deg 91% 52%);
+}
+
+.image-container {
+  margin-bottom: 55px;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.social-media-container {
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: var(--blue);
+}
+
+.social-media-container a:hover {
+  color: var(--blue);
+}
+
+footer {
+  color: var(--gray);
+}
+
+.error-msg {
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+}
+
+.displayNone {
+  display: none;
+}
+
+.redBorder {
+  outline: 1px solid red;
+  border: none;
+}
+
+@media screen and (min-width: 795px) {
+  body {
+    max-width: 1050px;
+  }
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .input-email-container {
+    width: 90%;
+    margin-right: 15px;
+  }
+
+  .btn-submit {
+    max-width: 40%;
+  }
 }
